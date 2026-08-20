@@ -9,6 +9,7 @@ Both of these scripts are based off of the following paper: [Correction of image
 ## Drift
 
 The drift correction script (drift_correction.m) must be run after the DIC is run for the two images. The chosen images and DIC results must be edited within the script in lines 19 through 24. Image 0 is the first image taken, and the base_img is the image that the DIC is named after/second image taken.
+  
   img_0 = imread("{first_img_taken.tif}");
   base_img = imread("{scnd_img_taken.tif}");
   ...
