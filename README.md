@@ -10,10 +10,13 @@ Both of these scripts are based off of the following paper: [Correction of image
 
 The drift correction script (drift_correction.m) must be run after the DIC is run for the two images. The chosen images and DIC results must be edited within the script in lines 19 through 24. Image 0 is the first image taken, and the base_img is the image that the DIC is named after/second image taken.
   
-  img_0 = imread("{first_img_taken.tif}");
-  base_img = imread("{scnd_img_taken.tif}");
-  ...
-  results_filename = 'results_{scnd_img_taken_name}_ws{width}_st{step}.mat';
+  >img_0 = imread("{first_img_taken.tif}");
+>
+  >base_img = imread("{scnd_img_taken.tif}");
+>
+  >...
+>
+  >results_filename = 'results_{scnd_img_taken_name}_ws{width}_st{step}.mat';
 
 The script then takes the displacement mesh and interpolates the data for the area of the image outside the ROI, as well as the pixels in between the subset steps.
 
@@ -24,10 +27,15 @@ The script will calculate the real pixel positions and ensure the pixels are wit
 ## Distortion
 
 The distortion correction script (distortion_correction.m) has the ALDIC run implemented within the script. The chosen images must be edited within the script in lines 7 through 10. 'im0' is equivalent to 'img_0' in the drift correction script, and 'im1' is equivalent to 'base_img'.
-  im0_name = 'distortion_04.tif';
-  im1_name = 'distortion_05.tif';
-  img_0 = imread("distortion_04.tif");
-  img_1 = imread('distortion_05.tif');
+  
+  >im0_name = 'distortion_04.tif';
+>
+  >im1_name = 'distortion_05.tif';
+>
+  >img_0 = imread("distortion_04.tif");
+>
+  >img_1 = imread('distortion_05.tif');
+>
 
 The user then needs to select the ROI region. Image 0 will be displayed, and the user should click the lower left corner of the region shared between the two images. Image 1 will be displayed after, and the user should click the upper left corner of the region shared between the two images. 
 
