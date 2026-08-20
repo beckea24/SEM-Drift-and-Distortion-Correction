@@ -1,10 +1,9 @@
 # ALDIC-Based-Drift-and-Distortion-Correction
 
 ## Introduction
-ALDIC-Based Drift and Distortion Correction uses AL-DIC [https://www.mathworks.com/matlabcentral/fileexchange/70499-augmented-lagrangian-digital-image-correlation-and-tracking] to compute the displacement. Additionally, I use a modified main ALDIC script for the distortion correction.
+ALDIC-Based Drift and Distortion Correction uses[AL-DIC](https://www.mathworks.com/matlabcentral/fileexchange/70499-augmented-lagrangian-digital-image-correlation-and-tracking) to compute the displacement. Additionally, I use a modified main ALDIC script for the distortion correction.
 
-Both of these scripts are based off of the following paper: 
-[https://www.researchgate.net/publication/281852637_Correction_of_image_drift_and_distortion_in_a_scanning_electron_microscopy]
+Both of these scripts are based off of the following paper: (Correction of image drift and distortion)[https://www.researchgate.net/publication/281852637_Correction_of_image_drift_and_distortion_in_a_scanning_electron_microscopy]
 
 
 ## Drift
